@@ -29,11 +29,14 @@
     jQuery(document).ready(function($) {
         $('audio,video').mediaelementplayer({
           features: ['playpause','progress','current'],
-          audioWidth: 300,
-          audioHeight: 40
+          audioWidth: 400,
+          audioHeight: 60
         });
 
         $('.mejs-time-total').unbind('mouseenter');
+
+        $('.mejs__inner').append('<div class=\'whatsapp_pic\'></div>');
+        $('.mejs__inner').append('<div class=\'whatsapp_name\'>Tony Hawk</div>');
     });
 </script>
 </body>
