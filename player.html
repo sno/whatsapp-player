@@ -19,7 +19,13 @@
   </style>
 </head>
 <body>
-  <audio controls>
+  <audio controls width="300px" height="60px" class="shrek">
+    <source src="https://dom.ink/10/audio/hive-escape-plan.ogg" type="audio/ogg" >
+    <source src="https://dom.ink/10/audio/hive-escape-plan.mp3" type="audio/mp3" >
+    Your browser does not support the audio tag!
+  </audio>
+
+  <audio controls width="300px" height="60px" class="tony">
     <source src="https://dom.ink/10/audio/hive-escape-plan.ogg" type="audio/ogg" >
     <source src="https://dom.ink/10/audio/hive-escape-plan.mp3" type="audio/mp3" >
     Your browser does not support the audio tag!
@@ -28,15 +34,14 @@
   <script>
     jQuery(document).ready(function($) {
         $('audio,video').mediaelementplayer({
-          features: ['playpause','progress','current'],
-          audioWidth: 400,
-          audioHeight: 60
+          features: ['playpause','progress','current']
         });
 
         $('.mejs-time-total').unbind('mouseenter');
 
         $('.mejs__inner').append('<div class=\'whatsapp_pic\'></div>');
-        $('.mejs__inner').append('<div class=\'whatsapp_name\'>Tony Hawk</div>');
+        $('.tony .mejs__inner').append('<div class=\'whatsapp_name\'>Tony Hawk</div>');
+        $('.shrek .mejs__inner').append('<div class=\'whatsapp_name\'>Shrek</div>');
     });
 </script>
 </body>

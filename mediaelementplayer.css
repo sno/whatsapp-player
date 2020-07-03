@@ -786,9 +786,18 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
     padding: 20px 0 0 30px;
     width: 50px;
     z-index: 3;
-    background: url(profilepic.png) center center;
-    background-size: 50px 40px;
     float: right;
+}
+
+.tony .whatsapp_pic {
+  background: url(profilepic.png) center center;
+  background-size: 50px 40px;
+}
+
+
+.shrek .whatsapp_pic {
+  background: url(profilepic2.png) center center;
+  background-size: 50px 40px;
 }
 
 .whatsapp_name {
