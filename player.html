@@ -26,13 +26,15 @@
   </audio>
 
   <script>
-jQuery(document).ready(function($) {
-    $('audio,video').mediaelementplayer({
-      features: ['playpause','progress','current'],
-      audioWidth: 300,
-      audioHeight: 40
+    jQuery(document).ready(function($) {
+        $('audio,video').mediaelementplayer({
+          features: ['playpause','progress','current'],
+          audioWidth: 300,
+          audioHeight: 40
+        });
+
+        $('.mejs-time-total').unbind('mouseenter');
     });
-});
 </script>
 </body>
 </html>
